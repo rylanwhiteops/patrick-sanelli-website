@@ -360,7 +360,7 @@
       background: var(--silver);
       opacity: 0.45;
       z-index: 4;
-      animation: progressBar 5s linear infinite;
+      animation: progressBar 4.5s linear infinite;
     }
     @keyframes progressBar { from { width: 0%; } to { width: 100%; } }
 
@@ -1373,7 +1373,7 @@
   <canvas id="heroCanvas"></canvas>
 
   <!-- Slide 1 -->
-  <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80');">
+  <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1920&q=80');">
     <div class="slide-content">
       <div class="slide-text">
         <div class="slide-eyebrow">Complimentary Portfolio Review</div>
@@ -1740,7 +1740,7 @@
     if (progress) { progress.style.animation = 'none'; void progress.offsetWidth; progress.style.animation = ''; }
   }
 
-  function startTimer() { timer = setInterval(() => { if (!paused) goTo(current + 1); }, 5000); }
+  function startTimer() { timer = setInterval(() => { if (!paused) goTo(current + 1); }, 4500); }
   function resetTimer()  { clearInterval(timer); startTimer(); }
 
   document.querySelector('.carousel-prev').addEventListener('click', () => { goTo(current - 1); resetTimer(); });
