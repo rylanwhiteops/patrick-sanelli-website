@@ -663,6 +663,123 @@
     }
     .linkedin-link:hover { color: var(--silver); border-color: var(--silver); }
 
+    /* ── TEAM ──────────────────────────────────────────────── */
+    .team {
+      background: var(--navy-dark);
+      padding: 100px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(176,196,216,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(176,196,216,0.03) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+
+    .team-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .team-hdr { margin-bottom: 56px; }
+    .team-hdr h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 3vw, 42px);
+      font-weight: 700;
+      color: var(--white);
+      margin-top: 12px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .team-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(176,196,216,0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .team-card:hover {
+      border-color: rgba(176,196,216,0.28);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 48px rgba(0,0,0,0.3);
+    }
+
+    .team-photo-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 320px;
+      background: #0d1f3c;
+    }
+
+    .team-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .team-card:hover .team-photo { transform: scale(1.03); }
+
+    .team-photo-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 40%;
+      background: linear-gradient(to bottom, transparent, rgba(6,14,26,0.6));
+    }
+
+    .team-info {
+      padding: 24px 28px 28px;
+      border-top: 1px solid rgba(176,196,216,0.08);
+    }
+
+    .team-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .team-creds {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--silver);
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .team-title {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .team-divider {
+      width: 32px;
+      height: 1.5px;
+      background: var(--silver);
+      opacity: 0.4;
+      margin: 12px 0;
+    }
+
+    @media (max-width: 900px) {
+      .team-grid { grid-template-columns: 1fr; max-width: 400px; }
+    }
+
     /* ── HOW IT WORKS ──────────────────────────────────────── */
     .how {
       background: var(--navy-dark);
@@ -1243,7 +1360,7 @@
     <div class="hero-img-wrap">
       <div class="hero-img-glow"></div>
       <div class="hero-img-inner">
-        <img src="Patrick Sanelllllo headshot.jpeg" alt="Patrick Sanelli, Associate Investment Advisor at iA Private Wealth" class="hero-img">
+        <img src="Patrick Sanelli headshot.jpeg" alt="Patrick Sanelli, Associate Investment Advisor at iA Private Wealth" class="hero-img">
       </div>
       <div class="hero-card">
         <div class="hero-card-label">Associate Investment Advisor</div>
@@ -1287,7 +1404,7 @@
 <section class="about" id="about">
   <div class="about-inner">
     <div class="about-img-wrap fi">
-      <img src="Patrick Sanelllllo headshot.jpeg" alt="Patrick Sanelli" class="about-img">
+      <img src="Patrick Sanelli headshot.jpeg" alt="Patrick Sanelli" class="about-img">
       <div class="about-img-accent"></div>
     </div>
 
@@ -1314,6 +1431,55 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         Connect on LinkedIn
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEAM ══════════════════════════════════════════════════════════════════ -->
+<section class="team">
+  <div class="team-inner">
+    <div class="team-hdr fi">
+      <div class="section-eyebrow">The Team</div>
+      <h2>Meet the People Behind Your Portfolio</h2>
+    </div>
+    <div class="team-grid">
+
+      <div class="team-card fi">
+        <div class="team-photo-wrap">
+          <img src="Patrick Sanelli headshot.jpeg" alt="Patrick Sanelli" class="team-photo">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Patrick Sanelli</div>
+          <div class="team-creds">CSC &nbsp; CPH &nbsp; LLQP</div>
+          <div class="team-divider"></div>
+          <div class="team-title">Associate Investment Advisor<br>iA Private Wealth</div>
+        </div>
+      </div>
+
+      <div class="team-card fi">
+        <div class="team-photo-wrap">
+          <img src="IMG_6334.jpeg" alt="Carl Achkar" class="team-photo">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Carl Achkar</div>
+          <div class="team-creds">CIM® &nbsp; FCSI®</div>
+          <div class="team-divider"></div>
+          <div class="team-title">Portfolio Manager, Senior Investment Advisor<br>iA Private Wealth</div>
+        </div>
+      </div>
+
+      <div class="team-card fi">
+        <div class="team-photo-wrap">
+          <img src="IMG_6335.jpeg" alt="Tanveer Khan" class="team-photo">
+        </div>
+        <div class="team-info">
+          <div class="team-name">Tanveer Khan</div>
+          <div class="team-creds">CFA</div>
+          <div class="team-divider"></div>
+          <div class="team-title">Portfolio Analytics Associate<br>iA Private Wealth</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1555,7 +1721,7 @@
 
   /* ── AMBIENT DOTS — ALL DARK SECTIONS ───────────── */
   const darkSections = document.querySelectorAll(
-    '.about, .how, .services, .trust-bar, .cta-section, .footer'
+    '.about, .team, .how, .services, .trust-bar, .cta-section, .footer'
   );
 
   darkSections.forEach(section => {
