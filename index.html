@@ -1190,10 +1190,11 @@
       .util-bar { display: none; }
       .main-nav { padding: 0 16px; }
       .nav-links { display: none; }
-      .nav-ia-logo img { height: 22px !important; }
-      .nav-ia-logo { margin-right: auto; }
+      .nav-inner { position: relative; }
       .nav-logo { font-size: 15px; }
-      .nav-cta { font-size: 11px; padding: 8px 12px; letter-spacing: 0; }
+      .nav-divider { display: none; }
+      .nav-ia-logo { position: absolute; left: 50%; transform: translateX(-50%); }
+      .nav-ia-logo img { height: 22px !important; }
       .slide-content { padding: 0 20px; }
       .carousel-arrow { display: none; }
       .about, .how, .services, .trust-bar, .cta-section { padding-left: 20px; padding-right: 20px; }
@@ -1365,7 +1366,7 @@
   <div class="nav-inner">
     <div style="display:flex; align-items:center; gap:20px;">
       <a href="#home" class="nav-logo">Patrick <span>Sanelli</span></a>
-      <div style="width:1px; height:28px; background:rgba(255,255,255,0.15);"></div>
+      <div class="nav-divider" style="width:1px; height:28px; background:rgba(255,255,255,0.15);"></div>
       <a href="https://iaprivatewealth.ca" target="_blank" rel="noopener" class="nav-ia-logo">
         <img src="iA private wealth .png" alt="iA Private Wealth" style="height:44px; width:auto; display:block;">
       </a>
