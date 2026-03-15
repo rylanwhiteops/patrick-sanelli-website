@@ -1964,10 +1964,10 @@
   }
 
   function refreshAll() {
-    fetch('https://finnhub.io/api/v1/quote?symbol=OANDA%3AUSD_CAD&token=' + KEY)
+    fetch('https://open.er-api.com/v6/latest/USD')
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        if (data.c && data.c > 0) cadRate = data.c;
+        if (data.rates && data.rates.CAD) cadRate = data.rates.CAD;
         Object.keys(SYMBOLS).forEach(function (id) {
           fetchQuote(id, SYMBOLS[id]);
         });
