@@ -1933,9 +1933,12 @@
     brkb:   'BRK.B'
   };
 
+  var cadRate = 1;
+
   function formatVal(id, c) {
-    if (id === 'btc') return '$' + Math.round(c).toLocaleString('en-US');
-    return '$' + c.toFixed(2);
+    var cad = c * cadRate;
+    if (id === 'btc') return 'CA$' + Math.round(cad).toLocaleString('en-US');
+    return 'CA$' + cad.toFixed(2);
   }
 
   function updateTicker(id, data) {
@@ -1961,9 +1964,19 @@
   }
 
   function refreshAll() {
-    Object.keys(SYMBOLS).forEach(function (id) {
-      fetchQuote(id, SYMBOLS[id]);
-    });
+    fetch('https://finnhub.io/api/v1/quote?symbol=OANDA%3AUSD_CAD&token=' + KEY)
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.c && data.c > 0) cadRate = data.c;
+        Object.keys(SYMBOLS).forEach(function (id) {
+          fetchQuote(id, SYMBOLS[id]);
+        });
+      })
+      .catch(function () {
+        Object.keys(SYMBOLS).forEach(function (id) {
+          fetchQuote(id, SYMBOLS[id]);
+        });
+      });
   }
 
   refreshAll();
