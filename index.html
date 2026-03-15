@@ -1219,123 +1219,111 @@
 <body>
 
 <!-- ═══ STOCK TICKER ═══════════════════════════════════════════════════════ -->
-<div class="ticker-bar" aria-label="Live market data — placeholder values">
+<div class="ticker-bar" aria-label="Market data — delayed ~15 min">
   <div class="ticker-track">
     <!-- Set 1 -->
-    <span class="t-item">
+    <span class="t-item" data-ticker="sp500">
       <span class="t-icon" style="background:#1a4d9e;">
         <svg width="12" height="12" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="7" height="7" fill="#fff" opacity="0.9"/><rect x="11" y="2" width="7" height="7" fill="#fff" opacity="0.9"/><rect x="2" y="11" width="7" height="7" fill="#fff" opacity="0.9"/><rect x="11" y="11" width="7" height="7" fill="#fff" opacity="0.9"/></svg>
       </span>
-      <span class="t-label">S&amp;P 500</span><span class="t-val">5,712.43</span><span class="t-up">▲ +0.43%</span>
+      <span class="t-label">S&amp;P 500</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="tsx">
       <span class="t-icon" style="background:#c0392b;">
         <svg width="12" height="12" viewBox="0 0 20 20" fill="none"><polygon points="10,2 12,8 18,8 13,12 15,18 10,14 5,18 7,12 2,8 8,8" fill="#fff" opacity="0.9"/></svg>
       </span>
-      <span class="t-label">TSX</span><span class="t-val">24,891.22</span><span class="t-up">▲ +0.18%</span>
+      <span class="t-label">TSX</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="dow">
       <span class="t-icon" style="background:#0d3880; font-size:10px; color:#fff; font-weight:900;">D</span>
-      <span class="t-label">DOW</span><span class="t-val">42,156.32</span><span class="t-dn">▼ −0.12%</span>
+      <span class="t-label">DOW</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="nasdaq">
       <span class="t-icon" style="background:#5e2d91; font-size:9px; color:#fff; font-weight:900;">NQ</span>
-      <span class="t-label">NASDAQ</span><span class="t-val">18,234.56</span><span class="t-up">▲ +0.67%</span>
+      <span class="t-label">NASDAQ</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="gold">
       <span class="t-icon" style="background:#b8860b;">
         <svg width="11" height="11" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#fff" stroke-width="2" opacity="0.9"/><text x="10" y="14" font-size="9" text-anchor="middle" fill="#fff" font-weight="bold">Au</text></svg>
       </span>
-      <span class="t-label">Gold</span><span class="t-val">$2,312.80</span><span class="t-up">▲ +0.34%</span>
+      <span class="t-label">Gold</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="oil">
       <span class="t-icon" style="background:#2e7d32;">
         <svg width="12" height="12" viewBox="0 0 20 20" fill="none"><path d="M10 2 C6 2 3 5 3 9 C3 14 10 18 10 18 C10 18 17 14 17 9 C17 5 14 2 10 2Z" fill="#fff" opacity="0.85"/></svg>
       </span>
-      <span class="t-label">Oil (WTI)</span><span class="t-val">$78.45</span><span class="t-up">▲ +1.23%</span>
+      <span class="t-label">Oil (WTI)</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="btc">
       <span class="t-icon" style="background:#f7931a; font-size:11px; color:#fff; font-weight:900;">₿</span>
-      <span class="t-label">Bitcoin</span><span class="t-val">$71,240</span><span class="t-up">▲ +2.14%</span>
+      <span class="t-label">Bitcoin</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="usdcad">
       <span class="t-icon" style="background:#1565c0; font-size:10px; color:#fff; font-weight:900;">$</span>
-      <span class="t-label">USD/CAD</span><span class="t-val">1.3542</span><span class="t-dn">▼ −0.08%</span>
-    </span>
-    <span class="t-sep">|</span>
-
-    <span class="t-item">
-      <span class="t-icon" style="background:#37474f; font-size:9px; color:#fff; font-weight:800;">10Y</span>
-      <span class="t-label">Canada 10Y</span><span class="t-val">3.42%</span><span class="t-dn">▼ −0.03%</span>
+      <span class="t-label">USD/CAD</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
     <!-- Set 2 — duplicate for seamless loop -->
-    <span class="t-item">
+    <span class="t-item" data-ticker="sp500">
       <span class="t-icon" style="background:#1a4d9e;"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="7" height="7" fill="#fff" opacity="0.9"/><rect x="11" y="2" width="7" height="7" fill="#fff" opacity="0.9"/><rect x="2" y="11" width="7" height="7" fill="#fff" opacity="0.9"/><rect x="11" y="11" width="7" height="7" fill="#fff" opacity="0.9"/></svg></span>
-      <span class="t-label">S&amp;P 500</span><span class="t-val">5,712.43</span><span class="t-up">▲ +0.43%</span>
+      <span class="t-label">S&amp;P 500</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="tsx">
       <span class="t-icon" style="background:#c0392b;"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><polygon points="10,2 12,8 18,8 13,12 15,18 10,14 5,18 7,12 2,8 8,8" fill="#fff" opacity="0.9"/></svg></span>
-      <span class="t-label">TSX</span><span class="t-val">24,891.22</span><span class="t-up">▲ +0.18%</span>
+      <span class="t-label">TSX</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="dow">
       <span class="t-icon" style="background:#0d3880; font-size:10px; color:#fff; font-weight:900;">D</span>
-      <span class="t-label">DOW</span><span class="t-val">42,156.32</span><span class="t-dn">▼ −0.12%</span>
+      <span class="t-label">DOW</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="nasdaq">
       <span class="t-icon" style="background:#5e2d91; font-size:9px; color:#fff; font-weight:900;">NQ</span>
-      <span class="t-label">NASDAQ</span><span class="t-val">18,234.56</span><span class="t-up">▲ +0.67%</span>
+      <span class="t-label">NASDAQ</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="gold">
       <span class="t-icon" style="background:#b8860b;"><svg width="11" height="11" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#fff" stroke-width="2" opacity="0.9"/><text x="10" y="14" font-size="9" text-anchor="middle" fill="#fff" font-weight="bold">Au</text></svg></span>
-      <span class="t-label">Gold</span><span class="t-val">$2,312.80</span><span class="t-up">▲ +0.34%</span>
+      <span class="t-label">Gold</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="oil">
       <span class="t-icon" style="background:#2e7d32;"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><path d="M10 2 C6 2 3 5 3 9 C3 14 10 18 10 18 C10 18 17 14 17 9 C17 5 14 2 10 2Z" fill="#fff" opacity="0.85"/></svg></span>
-      <span class="t-label">Oil (WTI)</span><span class="t-val">$78.45</span><span class="t-up">▲ +1.23%</span>
+      <span class="t-label">Oil (WTI)</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="btc">
       <span class="t-icon" style="background:#f7931a; font-size:11px; color:#fff; font-weight:900;">₿</span>
-      <span class="t-label">Bitcoin</span><span class="t-val">$71,240</span><span class="t-up">▲ +2.14%</span>
+      <span class="t-label">Bitcoin</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
 
-    <span class="t-item">
+    <span class="t-item" data-ticker="usdcad">
       <span class="t-icon" style="background:#1565c0; font-size:10px; color:#fff; font-weight:900;">$</span>
-      <span class="t-label">USD/CAD</span><span class="t-val">1.3542</span><span class="t-dn">▼ −0.08%</span>
-    </span>
-    <span class="t-sep">|</span>
-
-    <span class="t-item">
-      <span class="t-icon" style="background:#37474f; font-size:9px; color:#fff; font-weight:800;">10Y</span>
-      <span class="t-label">Canada 10Y</span><span class="t-val">3.42%</span><span class="t-dn">▼ −0.03%</span>
+      <span class="t-label">USD/CAD</span><span class="t-val">—</span><span class="t-chg t-up">—</span>
     </span>
     <span class="t-sep">|</span>
   </div>
@@ -1891,6 +1879,60 @@
       if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     });
   });
+</script>
+
+<script>
+/* ── LIVE TICKER — FINNHUB ───────────────────────────────────────────── */
+(function () {
+  var KEY = 'd6rd8rpr01qr194m8idgd6rd8rpr01qr194m8ie0';
+  var SYMBOLS = {
+    sp500:  'SPY',
+    tsx:    'TSX:XIU',
+    dow:    'DIA',
+    nasdaq: 'QQQ',
+    gold:   'GLD',
+    oil:    'USO',
+    btc:    'BINANCE:BTCUSDT',
+    usdcad: 'OANDA:USD_CAD'
+  };
+
+  function formatVal(id, c) {
+    if (id === 'btc')    return '$' + Math.round(c).toLocaleString('en-US');
+    if (id === 'usdcad') return c.toFixed(4);
+    return '$' + c.toFixed(2);
+  }
+
+  function updateTicker(id, data) {
+    var c = data.c, dp = data.dp;
+    if (!c || c === 0) return;
+    var valStr = formatVal(id, c);
+    var isUp   = dp >= 0;
+    var chgStr = (isUp ? '▲ +' : '▼ ') + Math.abs(dp).toFixed(2) + '%';
+    document.querySelectorAll('[data-ticker="' + id + '"] .t-val').forEach(function (el) {
+      el.textContent = valStr;
+    });
+    document.querySelectorAll('[data-ticker="' + id + '"] .t-chg').forEach(function (el) {
+      el.textContent = chgStr;
+      el.className   = isUp ? 't-chg t-up' : 't-chg t-dn';
+    });
+  }
+
+  function fetchQuote(id, symbol) {
+    fetch('https://finnhub.io/api/v1/quote?symbol=' + encodeURIComponent(symbol) + '&token=' + KEY)
+      .then(function (r) { return r.json(); })
+      .then(function (data) { updateTicker(id, data); })
+      .catch(function () {});
+  }
+
+  function refreshAll() {
+    Object.keys(SYMBOLS).forEach(function (id) {
+      fetchQuote(id, SYMBOLS[id]);
+    });
+  }
+
+  refreshAll();
+  setInterval(refreshAll, 60000);
+})();
 </script>
 </body>
 </html>
