@@ -1151,6 +1151,18 @@
 
     .footer-copy { font-size: 11px; color: rgba(160,170,184,0.35); }
 
+    .footer-reg-logo { height: 44px; width: auto; opacity: 0.85; transition: opacity 0.2s; display: block; }
+    .footer-reg-logo:hover { opacity: 1; }
+
+    .know-your-advisor-link {
+      font-size: 11px;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    .know-your-advisor-link:hover { color: #e0bf6e; text-decoration: underline; }
+
     /* ── AMBIENT PARTICLES (all dark sections) ─────────────── */
     .p-dot {
       position: absolute;
@@ -1770,9 +1782,14 @@
       </p>
       <div class="footer-right">
         <div class="footer-badges">
-          <a href="https://www.cipf.ca" target="_blank" rel="noopener" class="footer-badge" style="text-decoration:none;">CIPF</a>
-          <a href="https://www.ciro.ca" target="_blank" rel="noopener" class="footer-badge" style="text-decoration:none;">CIRO</a>
+          <a href="https://www.ciro.ca/office-investor/know-your-advisor-advisor-report" target="_blank" rel="noopener" title="Regulated by CIRO">
+            <img src="https://advisorweb.iaprivatewealth.ca/scripts/regulatory-logos/ciro-white-en.svg" alt="Regulated by CIRO – Canadian Investment Regulatory Organization" class="footer-reg-logo">
+          </a>
+          <a href="https://www.cipf.ca" target="_blank" rel="noopener" title="CIPF Member">
+            <img src="https://advisorweb.iaprivatewealth.ca/scripts/regulatory-logos/cipf-white-en.svg" alt="CIPF Member – Canadian Investor Protection Fund" class="footer-reg-logo">
+          </a>
         </div>
+        <a href="https://www.ciro.ca/office-investor/know-your-advisor-advisor-report" target="_blank" rel="noopener" class="know-your-advisor-link">Know Your Advisor: Advisor Report</a>
         <div class="footer-copy">© 2026 Patrick Sanelli at iA Private Wealth</div>
       </div>
     </div>
